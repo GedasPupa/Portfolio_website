@@ -18,7 +18,7 @@ html {
       font-family: "Lexend Mega", sans-serif;
       background-color: black;
       color: rgb(170, 170, 170);
-      /* display: block; */
+      /* display: flex; */
     }
     header {
       position: fixed;
@@ -147,6 +147,18 @@ html {
     .active {
       color: lightskyblue;
       font-weight: 900;
+    }
+
+    canvas {
+      position: relative;
+      top: 100px;
+      background: black;
+      margin-left: 5%;
+    }
+    #jsfoot {
+      position: relative;
+      top: 128px;
+      margin-left: 5%;
     }
 
   }

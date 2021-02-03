@@ -154,8 +154,8 @@ function initEventListeners() {
 
 function updateCanvasDimensions() {
   canvas.attr({
-    height: window.innerHeight - 300,
-    width: window.innerWidth
+    height: window.innerHeight - 200,
+    width: window.innerWidth - 100,
   });
   canvasWidth = canvas.width();
   canvasHeight = canvas.height();
@@ -240,7 +240,7 @@ function drawText(name, letterColors) {
       }
     } else {
       // if undefined set black
-      letterColors = [[0, 0, 27]];
+      letterColors = [[0, 0, 60]];
     }
 
     if (document.alphabet.hasOwnProperty(ccHex)) {
@@ -273,7 +273,7 @@ function drawText(name, letterColors) {
 
   for (var j = 0; j < g.length; j++) {
     g[j].curPos.x = (canvasWidth / 2 - offset / 2) + g[j].curPos.x;
-    g[j].curPos.y = (canvasHeight / 2 - 105) + g[j].curPos.y;
+    g[j].curPos.y = (canvasHeight / 2 - 200) + g[j].curPos.y;
     g[j].originalPos.x = (canvasWidth / 2 - offset / 2) + g[j].originalPos.x;
     g[j].originalPos.y = (canvasHeight / 2 - 105) + g[j].originalPos.y;
   }
@@ -302,7 +302,7 @@ var pointCollection;
 document.rotationForce = 0.0;
 document.Friction = 0.95;
 // Size the text
-document.sizeRatio = window.innerWidth / 2500;
+document.sizeRatio = window.innerWidth / 2300;
 // Global mouse-to-point interaction threshold (px)
 document.mouseResponseThreshold = 50;
 
