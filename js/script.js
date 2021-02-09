@@ -29,7 +29,7 @@ function increaseHTML() {
   itemHTML.style.width = '50%';
   itemHTML.style.height = '45%';
   itemHTML.style.textShadow = "2px 2px 3px black";
-  itemHTML.style.opacity = '0.85';
+  itemHTML.style.opacity = '0.9';
   itemh2.style.display = 'flex';
   itemh2.style.background = 'rgba(0, 0, 0, 0.7)';
 };
@@ -38,7 +38,6 @@ itemHTML.onmouseover = increaseHTML;
 function decreaseHTML() {
     itemHTML.style.width = '48%';
     itemHTML.style.height = '43%';
-    itemHTML.style.opacity = '0.75';
     itemh2.style.display = 'none';
   };
 itemHTML.onmouseout = decreaseHTML;
@@ -48,7 +47,7 @@ function increaseCSS() {
     itemCSS.style.height = '45%';
     itemCSS.style.color = "white";
     itemCSS.style.textShadow = "2px 2px 3px black";
-    itemCSS.style.opacity = '0.85';
+    itemCSS.style.opacity = '0.9';
     itemh22.style.display = 'flex';
     itemh22.style.background = 'rgba(0, 0, 0, 0.7)';
 };
@@ -57,7 +56,6 @@ itemCSS.onmouseover = increaseCSS;
 function decreaseCSS() {
     itemCSS.style.width = '48%';
     itemCSS.style.height = '43%';
-    itemCSS.style.opacity = '0.75';
     itemh22.style.display = 'none';
 };
 itemCSS.onmouseout = decreaseCSS;
@@ -66,7 +64,7 @@ function increaseJS() {
     itemJS.style.width = '50%';
     itemJS.style.height = '45%';
     itemJS.style.textShadow = "2px 2px 3px black";
-    itemJS.style.opacity = '0.85';
+    itemJS.style.opacity = '0.9';
     itemh222.style.display = 'flex';
     itemh222.style.background = 'rgba(0, 0, 0, 0.7)';
 };
@@ -75,7 +73,6 @@ itemJS.onmouseover = increaseJS;
 function decreaseJS() {
     itemJS.style.width = '48%';
     itemJS.style.height = '43%';
-    itemJS.style.opacity = '0.75';
     itemh222.style.display = 'none';
 };
 itemJS.onmouseout = decreaseJS;

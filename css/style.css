@@ -18,14 +18,13 @@ html {
       font-family: "Lexend Mega", sans-serif;
       background-color: black;
       color: rgb(170, 170, 170);
-      /* display: flex; */
     }
     header {
       position: fixed;
       width: 100%;
       z-index: 15;
       background: rgba(0, 0, 0, 0.85);
-      opacity: 0.85;
+      opacity: 0.95;
     }
     nav {
       display: flex;
@@ -81,6 +80,7 @@ html {
     }
     .about {
       height: 84%;
+      width: 100%;
     }
 
     .work {
@@ -91,24 +91,27 @@ html {
       position: relative;
       z-index: 5;
       color:rgb(240, 240, 240);
-      opacity: 0.75;
+      opacity: 0.9;
     }
-
+    #construction {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
     .work h3 {
       text-align: justify;
       font-weight: 500;
     }
 
-    #construction {
+    #constr {
       background-image: url("../img/Under-Construction.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       border-radius: 5px;
       position: relative;
-      opacity: 0.75;
-      text-align: left;
-
+      opacity: 0.85;
     }
 
     #one {
@@ -118,7 +121,6 @@ html {
       background-position: center;
       border-radius: 5px;
       position: relative;
-      opacity: 0.75;
     }
     #h2, #h22, #h222 {
       display: none;
@@ -144,7 +146,6 @@ html {
       background-size: cover;
       background-position: center;
       border-radius: 5px;
-      opacity: 0.75;
     }
     #three {
       background-image: url("../img/js1.jpg");
@@ -152,7 +153,6 @@ html {
       background-size: cover;
       background-position: center;
       border-radius: 5px;
-      opacity: 0.75;
     }
 
     .active {
