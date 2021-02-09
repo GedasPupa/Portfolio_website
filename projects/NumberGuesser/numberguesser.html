@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>GP portfolio</title>
+    <link rel="shortcut icon" href="../../img/briefcase.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+    <script src="../../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/index.html">Work</a></li>
+          <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/about.html">About</a></li>
+          <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/info.html">Info</a></li>
+        </ul>
+        <a id="logo" href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/index.html">Gediminas Puplevičius</a>
+      </nav>
+    </header>
+    <div class="game-container" id="guesser">
+      <div id="header">
+        <h1>Number Guesser!</h1>
+      </div>
+      
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">Target Number: <span id="target-number">?</span></p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title" id="cguess">
+            <p class="guess-label">Computer</p>
+            <p class="score-label">Score: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">You</p>
+            <p class="score-label">Score: <span id="human-score">0</span></p>
+          </div>
+          <input type="number" id="human-guess" min=0 max=9 value=0>
+          <div class="number-controls">
+            <button class="number-control left" id="subtract" disabled>-</button>
+            <button class="number-control right" id="add">+</button>
+          </div>
+          <button class="button" id="guess">Make a Guess</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Next Round</button>
+      </div>
+
+    </div>
+    
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Step 1</h3>
+        <p>Input a number between 0 and 9</p>
+      </div>
+      <div class="instruction">
+        <h3>Step 2</h3>
+        <p>Click "Make a Guess" to submit your guess and see who won the round.</p>
+      </div>
+      <div class="instruction">
+        <h3>Step 3</h3>
+        <p>Click "Next Round" to play again.</p>
+      </div>
+    </div>
+    <footer id="ngfoot">
+      <h5> &#169 GP - Vilnius | 2021</h5>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./game.js"></script>
+  </body>
+</html>
