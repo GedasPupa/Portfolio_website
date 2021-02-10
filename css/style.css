@@ -80,7 +80,7 @@ html {
     }
     .about {
       height: 84%;
-      width: 100%;
+      width: 90%;
     }
 
     .work {
@@ -161,14 +161,14 @@ html {
     }
 
     canvas {
-      position: relative;
+      position: absolute;
       top: 100px;
       background: black;
       margin-left: 5%;
     }
     #jsfoot {
-      position: relative;
-      top: 128px;
+      position: absolute;
+      bottom: 1px;
       margin-left: 5%;
     }
 

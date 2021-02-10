@@ -154,7 +154,7 @@ function initEventListeners() {
 
 function updateCanvasDimensions() {
   canvas.attr({
-    height: window.innerHeight - 200,
+    height: window.innerHeight - 150,
     width: window.innerWidth - 100,
   });
   canvasWidth = canvas.width();
@@ -240,7 +240,7 @@ function drawText(name, letterColors) {
       }
     } else {
       // if undefined set black
-      letterColors = [[0, 0, 60]];
+      letterColors = [[0, 0, 73]];
     }
 
     if (document.alphabet.hasOwnProperty(ccHex)) {
