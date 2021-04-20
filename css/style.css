@@ -51,7 +51,7 @@ html {
       text-decoration: none;
       font-weight: 800;
     }
-    a:hover, #three a:hover, #one a:hover, #two a:hover {
+    a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
       color: lightskyblue;
     }
     #logo {
@@ -73,7 +73,7 @@ html {
       top: 67px;
       display: flex;
       flex-wrap: wrap;
-      height: 750px;
+      height: 850px;
       justify-content: space-between;
       align-content: space-between;
       margin: 1em 5%;
@@ -84,8 +84,9 @@ html {
     }
 
     .work {
+      /* margin-top: 20px; */
       width: 48%;
-      height: 43%;
+      height: 32%;
       display: flex;
       align-items: center;
       position: relative;
@@ -122,7 +123,7 @@ html {
       border-radius: 5px;
       position: relative;
     }
-    #h2, #h22, #h222 {
+    #h2, #h22, #h222, #h2222 {
       display: none;
       flex-direction: column;
       justify-content: center;
@@ -134,7 +135,7 @@ html {
       margin: 0.4em 0;
       /* border: 1px solid greenyellow; */
     }
-    #h2 a, #h22 a, #h222 a {
+    #h2 a, #h22 a, #h222 a, #h2222 a {
       color: rgb(240, 240, 240);
       text-decoration: none;
       /* z-index: 5; */
@@ -149,6 +150,13 @@ html {
     }
     #three {
       background-image: url("../img/js1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px;
+    }
+    #four {
+      background-image: url("../img/react.png");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -171,7 +179,11 @@ html {
       bottom: 1px;
       margin-left: 5%;
     }
-
+    footer {
+      position: absolute;
+      bottom: -430px;
+      margin-left: 5%;
+    }
     /* --- Number Guesser part ------------------------- */
     #guesser * {
       font-family: "Lexend Mega", sans-serif;
