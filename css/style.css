@@ -179,7 +179,7 @@ html {
       bottom: 1px;
       margin-left: 5%;
     }
-    footer {
+    #mainfooter {
       position: absolute;
       bottom: -430px;
       margin-left: 5%;
