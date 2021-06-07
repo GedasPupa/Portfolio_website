@@ -2,25 +2,27 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="./img/briefcase.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/briefcase.svg" type="image/x-icon">
   <title>GP portfolio</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-  <link rel="stylesheet" type="text/css" href="./css/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" href="../css/normalize.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/header.css">
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
-  <script src="./js/jquery.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/index.html">Work</a></li>
-        <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/about.html">About</a></li>
-        <li><a href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/info.html">Info</a></li>
-      </ul>
-      <a id="logo" href="/C:/Users/Jurate/Documents/PROGRAMMING/H-C-JS/Portfolio/index.html">Gediminas Puplevičius</a>
+      <div class="links">
+        <a href="/">Work</a>
+        <a href="/about/">About</a>
+        <a href="/info/">Info</a>
+      </div>
+      <a id="logo" href="/">Gedosas</a>
+      <button class="hamburger" onClick="toggle()"><img src="../img/hamburger.png" id="hamburger"></button>
     </nav>
   </header>
 
@@ -40,7 +42,7 @@
     </footer>
   </main>
 
-  <script  src="./js/script.js"></script>
+  <script  src="../js/script.js"></script>
 
   <!-- <script>
 //     $(function(){

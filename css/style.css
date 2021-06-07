@@ -6,397 +6,145 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/* ------------------------------------------------------------------ */
-
 
 /* Mobile first styles go here */
 
+/* Desktop styles go here */
+body {
+  font-family: "Lexend Mega", sans-serif;
+  background-color: black;
+  color: rgb(170, 170, 170);
+}
 
-/* @media screen and (min-width: 768px) { */
-    /* Desktop styles go here */
-    body {
-      font-family: "Lexend Mega", sans-serif;
-      background-color: black;
-      color: rgb(170, 170, 170);
-    }
-    header {
-      position: fixed;
-      width: 100%;
-      z-index: 15;
-      background: rgba(0, 0, 0, 0.85);
-      opacity: 0.95;
-    }
-    nav {
-      display: flex;
-      justify-content: space-between;
-      font-size: 1.125em;
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      justify-content: flex-start;
-      width: 50%;
-      padding-inline-start: 5%;
-      margin-block-start: 1.5em;
-      margin-block-end: 1.5em;
-    }
-    nav li {
-      display: flex;
-      margin: 0;
-      margin-right: 5%;
-      text-decoration: none;
-    }
-    nav a {
-      color:rgb(240, 240, 240);
-      text-decoration: none;
-      font-weight: 800;
-    }
-    a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
-      color: lightskyblue;
-    }
-    #logo {
-      text-align: right;
-      width: 50%;
-      margin: 1em 0;
-      margin-right: 5%;
-      margin-block-start: 1.5em;
-      margin-block-end: 1.5em;
-      text-decoration: none;
-      color: lightskyblue;
-      width: inherit;
-    }
-    #logo:hover {
-      color:rgb(240, 240, 240);
-    }
-    main {
-      position: absolute;
-      top: 67px;
-      display: flex;
-      flex-wrap: wrap;
-      height: 850px;
-      justify-content: space-between;
-      align-content: space-between;
-      margin: 1em 5%;
-    }
-    .about {
-      height: 84%;
-      width: 90%;
-    }
+main {
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 850px; */
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 1em 10%;
+  /* height: 120vh; */
+}
+.about {
+  height: 84%;
+  width: 90%;
+}
 
-    .work {
-      /* margin-top: 20px; */
-      width: 48%;
-      height: 32%;
-      display: flex;
-      align-items: center;
-      position: relative;
-      z-index: 5;
-      color:rgb(240, 240, 240);
-      opacity: 0.9;
-    }
-    #construction {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    .work h3 {
-      text-align: justify;
-      font-weight: 500;
-    }
+.work {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  z-index: 5;
+  color:rgb(240, 240, 240);
+  opacity: 0.9;
+}
+#construction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.work h3 {
+  text-align: justify;
+  font-weight: 500;
+}
 
-    #constr {
-      background-image: url("../img/Under-Construction.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 5px;
-      position: relative;
-      opacity: 0.85;
-    }
-    #info {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-    }
-    #git {
-      position: relative;
-      top: 50px;
-      width: 50%;
-    }
-    #email {
-      position: relative;
-      top: 80px;
-    }
-    #one {
-      background-image: url("../img/html5.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 5px;
-      position: relative;
-    }
-    #h2, #h22, #h222, #h2222 {
-      display: none;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-      height: 100%;
-    }
-    h2 {
-      margin: 0.4em 0;
-      /* border: 1px solid greenyellow; */
-    }
-    #h2 a, #h22 a, #h222 a, #h2222 a {
-      color: rgb(240, 240, 240);
-      text-decoration: none;
-      /* z-index: 5; */
-    }
+#constr {
+  background-image: url("../img/Under-Construction.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  position: absolute;
+  height: 250px;
+  opacity: 0.85;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+#git {
+  position: relative;
+  top: 50px;
+  width: 50%;
+}
+#email {
+  position: relative;
+  top: 80px;
+}
+#one {
+  background-image: url("../img/html5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  /* position: absolute; */
+}
+#h2, #h22, #h222, #h2222 {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  margin: 0.4em 0;
+}
 
-    #two {
-      background-image: url("../img/css3.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 5px;
-    }
-    #three {
-      background-image: url("../img/js1.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 5px;
-    }
-    #four {
-      background-image: url("../img/react.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      border-radius: 5px;
-    }
+#h2 a, #h22 a, #h222 a, #h2222 a {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+}
 
-    .active {
-      color: lightskyblue;
-      font-weight: 900;
-    }
+#two {
+  background-image: url("../img/css3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+#three {
+  background-image: url("../img/js1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+#four {
+  background-image: url("../img/react.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
 
-    canvas {
-      position: absolute;
-      top: 100px;
-      background: black;
-      margin-left: 5%;
-    }
-    #jsfoot, #infofooter {
-      position: absolute;
-      bottom: 1px;
-      margin-left: 5%;
-    }
-    #mainfooter {
-      position: absolute;
-      bottom: -420px;
-      margin-left: 5%;
-    }
-    /* --- Number Guesser part ------------------------- */
-    #guesser * {
-      font-family: "Lexend Mega", sans-serif;
-      /* position: relative; */
-      /* top: 40px; */
-    }
-    .game-container#guesser {
-      position: relative;
-      top: 60px;
-    }
-    .game-container {
-      max-width: 640px;
-      margin: 0 auto;
-      text-align: center;
-    }
-    
-    #header {
-      display: flex;
-      justify-content: center
-    }
-    
-    .rounds {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-    
-    .round-label {
-      font-size: 30px;
-      font-weight: 700;
-      margin-bottom: 0px;
-    }
-    
-    .guess {
-      min-width: 303px;
-      height: 328px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 19px;
-    }
-    
-    .guessing-area {
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      margin-bottom: 60px;
-    }
-    
-    .guess-title {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      margin-bottom: 20px;
-    }
-    
-    .guess-label {
-      font-size: 18px;
-      font-weight: 700;
-      margin: 0;
-    }
-    
-    .score-label {
-      font-size: 14px;
-      font-weight: 700;
-      margin: 0;
-    }
-    #cguess {
-      color: rgba(0, 0, 0, 0.85);
-    }
-    .target-guess {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-    
-    .computer-guess {
-      background-color:rgb(240, 240, 240);
-    }
-    
-    #computer-guess {
-      font-size: 50px;
-      font-weight: 700;
-      color:rgba(0, 0, 0, 0.85);
-    }
-    
-    .human-guess {
-      border: 1px solid #979797;
-    }
-    
-    .guess input {
-      height: 90px;
-      width: 90px;
-      font-size: 30px;
-      text-align: center;
-      margin: 0 auto;
-      margin-bottom: 7px;
-      background-color: rgb(240, 240, 240);
-      color:rgba(0, 0, 0, 0.85);
-    }
-    
-    .number-controls {
-      font-size: 0;
-      margin-bottom: 23px;
-    }
-    
-    .number-control {
-      border: solid 1px #4c7ef3;
-      display: inline-block;
-      width: 45px;
-      height: 35px;
-      font-size: 24px;
-      font-weight: 700;
-      color: #4c7ef3;
-      cursor: pointer;
-    }
-    
-    .number-controls button[disabled] {
-      color: #dfdfdf;
-      cursor: default;
-    }
-    
-    .left {
-      border-top-left-radius: 22.5px;
-      border-bottom-left-radius: 22.5px;
-    }
-    
-    .right {
-      border-top-right-radius: 22.5px;
-      border-bottom-right-radius: 22.5px;
-      border-left-width: 0px;
-    }
-    
-    .controls {
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    .button {
-      background-color: #4c7ef3;
-      color: #fff;
-      cursor: pointer;
-    }
-    
-    #guess {
-      padding: 20px;
-      width: 169px;
-      height: 59px;
-      border: none;
-      font-weight: 700;
-      font-size: 14px;
-    }
-    
-    input[type=number]::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-    }
-    
-    #next-round {
-      width: 179px;
-      height: 64px;
-      font-size: 18px;
-      font-weight: bold;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 120px;
-    }
-      
-    .button[disabled] {
-      background-color: #d2d2d2;
-      color: rgba(0, 0, 0, 0.85);
-      cursor: default;
-    }
-    
-    .instructions {
-      background-color: #ececec;
-      color:rgba(0, 0, 0, 0.85);
-      width: 100%;
-      display: flex;
-      justify-content: space-around;
-    }
-    
-    .instruction {
-      width: 180px;
-      padding: 2px;
-      text-align: center;
-    }
-    
-    .instructions h3 {
-      font-size: 14px;
-    }
-       
-    .winning-text, .winning-text[disabled] {
-      color: darkblue;
-      font-weight: 700;
-    }
-    #ngfoot {
-      margin-left: 5%;
-    }
-  /* } */
+.active {
+  color: #7FC2EB;
+  font-weight: 900;
+}
+
+canvas {
+  position: absolute;
+  top: 100px;
+  background: black;
+  margin-left: 5%;
+}
+
+#jsfoot, #infofooter {
+  position: absolute;
+  bottom: 1px;
+  margin-left: 5%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 20px;
+  margin-left: 5%;
+}
+
