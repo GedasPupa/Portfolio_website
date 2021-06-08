@@ -9,6 +9,7 @@ html {
 
 /* Mobile first styles go here */
 
+
 /* Desktop styles go here */
 body {
   font-family: "Lexend Mega", sans-serif;
@@ -17,74 +18,38 @@ body {
 }
 
 main {
-  position: absolute;
+  position: relative;
   top: 90px;
   display: flex;
+  flex-grow: 2;
   flex-wrap: wrap;
-  /* height: 850px; */
   justify-content: space-between;
   align-content: space-between;
-  margin: 1em 10%;
-  /* height: 120vh; */
-}
-.about {
-  height: 84%;
-  width: 90%;
+  margin: 0 10%;
+  border: 2px solid #FFF;
+  /* height: 100vh; */
+  /* height: 850px; */
+
 }
 
 .work {
-  width: 400px;
-  height: 200px;
+  /* min-width: 330px;
+  max-width: 500px; */
+  min-height: 300px;
+
+  width: 370px;
+  max-width: 800px;
+  flex-grow: 1;
+
+
   display: flex;
   align-items: center;
   z-index: 5;
   color:rgb(240, 240, 240);
   opacity: 0.9;
-}
-#construction {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.work h3 {
-  text-align: justify;
-  font-weight: 500;
+  margin: 10px 10px;
 }
 
-#constr {
-  background-image: url("../img/Under-Construction.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  position: absolute;
-  height: 250px;
-  opacity: 0.85;
-}
-#info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-#git {
-  position: relative;
-  top: 50px;
-  width: 50%;
-}
-#email {
-  position: relative;
-  top: 80px;
-}
-#one {
-  background-image: url("../img/html5.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
-  /* position: absolute; */
-}
 #h2, #h22, #h222, #h2222 {
   display: none;
   flex-direction: column;
@@ -96,32 +61,28 @@ main {
 h2 {
   margin: 0.4em 0;
 }
-
 #h2 a, #h22 a, #h222 a, #h2222 a {
   color: rgb(240, 240, 240);
   text-decoration: none;
 }
 
-#two {
-  background-image: url("../img/css3.jpg");
+#one, #two, #three, #four {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
+}
+#one {
+  background-image: url("../img/html5.jpg");
+}
+#two {
+  background-image: url("../img/css3.jpg");
 }
 #three {
   background-image: url("../img/js1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
 }
 #four {
   background-image: url("../img/react.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px;
 }
 
 .active {
@@ -143,8 +104,9 @@ canvas {
 }
 
 .footer {
-  position: absolute;
-  bottom: 20px;
-  margin-left: 5%;
+  position: relative;
+  bottom: -120px;
+  margin-left: 10%;
+  padding-bottom: 20px;
 }
 

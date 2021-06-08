@@ -1,0 +1,45 @@
+.about {
+    height: 84%;
+    width: 90%;
+}
+
+#construction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.work h3 {
+    text-align: justify;
+    font-weight: 500;
+}
+  
+#constr {
+    background-image: url("../img/Under-Construction.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    position: absolute;
+    height: 250px;
+    opacity: 0.85;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#git {
+    position: relative;
+    top: 50px;
+    width: 50%;
+}
+
+#email {
+    position: relative;
+    top: 80px;
+}

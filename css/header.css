@@ -16,7 +16,7 @@ nav {
 .links {
   justify-content: flex-start;
   width: 50%;
-  padding-inline-start: 5%;
+  margin-inline-start: 10%;
   margin-block-start: 1.5em;
   margin-block-end: 1.5em;
 }
@@ -39,7 +39,7 @@ a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
 #logo {
   text-align: right;
   margin: 1em 0;
-  margin-right: 5%;
+  margin-right: 10%;
   margin-block-start: 1.5em;
   margin-block-end: 1.5em;
   text-decoration: none;
@@ -65,7 +65,7 @@ a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
   align-self: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 930px) {
   .hamburger {
     display: inline-flex;
     margin-right: 5%;
@@ -74,6 +74,12 @@ a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
     display: none;
   }
   #logo {
+    margin-left: 5%;
+  }
+  main {
+    margin: 0 5%;
+  }
+  .footer {
     margin-left: 5%;
   }
 }

@@ -8,7 +8,6 @@ $(function(){
 });
 
 
-
 let hamb = document.getElementById('hamburger');
 let links = document.querySelector('.links');
 
@@ -49,8 +48,8 @@ function toggle() {
 
 // Boxes style chaning on mouse activity
 function increaseHTML() {
-  itemHTML.style.width = '50%';
-  itemHTML.style.height = '34%';
+  itemHTML.style.width = '45%';
+  // itemHTML.style.height = '34%';
   itemHTML.style.textShadow = "2px 2px 3px black";
   itemHTML.style.opacity = '0.9';
   itemh2.style.display = 'flex';
@@ -59,15 +58,15 @@ function increaseHTML() {
 itemHTML.onmouseover = increaseHTML;
 
 function decreaseHTML() {
-    itemHTML.style.width = '48%';
-    itemHTML.style.height = '32%';
+    itemHTML.style.width = '370px';
+    // itemHTML.style.height = '32%';
     itemh2.style.display = 'none';
   };
 itemHTML.onmouseout = decreaseHTML;
 
 function increaseCSS() {
-    itemCSS.style.width = '50%';
-    itemCSS.style.height = '34%';
+    itemCSS.style.width = '35%';
+    // itemCSS.style.height = '34%';
     itemCSS.style.color = "white";
     itemCSS.style.textShadow = "2px 2px 3px black";
     itemCSS.style.opacity = '0.9';
@@ -77,15 +76,15 @@ function increaseCSS() {
 itemCSS.onmouseover = increaseCSS;
 
 function decreaseCSS() {
-    itemCSS.style.width = '48%';
-    itemCSS.style.height = '32%';
+    itemCSS.style.width = '370px';
+    // itemCSS.style.height = '32%';
     itemh22.style.display = 'none';
 };
 itemCSS.onmouseout = decreaseCSS;
 
 function increaseJS() {
-    itemJS.style.width = '50%';
-    itemJS.style.height = '34%';
+    itemJS.style.width = '45%';
+    // itemJS.style.height = '34%';
     itemJS.style.textShadow = "2px 2px 3px black";
     itemJS.style.opacity = '0.9';
     itemh222.style.display = 'flex';
@@ -94,15 +93,15 @@ function increaseJS() {
 itemJS.onmouseover = increaseJS;
   
 function decreaseJS() {
-    itemJS.style.width = '48%';
-    itemJS.style.height = '32%';
+    itemJS.style.width = '370px';
+    // itemJS.style.height = '32%';
     itemh222.style.display = 'none';
 };
 itemJS.onmouseout = decreaseJS;
 
 function increaseR() {
-  itemR.style.width = '50%';
-  itemR.style.height = '34%';
+  itemR.style.width = '45%';
+  // itemR.style.height = '34%';
   itemR.style.textShadow = "2px 2px 3px black";
   itemR.style.opacity = '0.9';
   itemh2222.style.display = 'flex';
@@ -111,8 +110,8 @@ function increaseR() {
 itemR.onmouseover = increaseR;
 
 function decreaseR() {
-  itemR.style.width = '48%';
-  itemR.style.height = '32%';
+  itemR.style.width = '370px';
+  // itemR.style.height = '32%';
   itemh2222.style.display = 'none';
 };
 itemR.onmouseout = decreaseR;
