@@ -1,0 +1,85 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 0.95;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.125em;
+}
+
+.links {
+  justify-content: flex-start;
+  width: 50%;
+  margin-inline-start: 10%;
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
+}
+
+.links > a {
+  margin: 0;
+  margin-right: 5%;
+}
+
+nav a {
+  color:rgb(240, 240, 240);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a:hover, #three a:hover, #one a:hover, #two a:hover, #four a:hover {
+  color: #7FC2EB;
+}
+
+#logo {
+  text-align: right;
+  margin: 1em 0;
+  margin-right: 10%;
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
+  text-decoration: none;
+  color: #7FC2EB;
+}
+
+#logo:hover {
+  color:rgb(240, 240, 240);
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  padding: 0;
+  display: none;
+  height: 30px;
+  align-self: center;
+}
+
+.hamburger > img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+@media screen and (max-width: 930px) {
+  .hamburger {
+    display: inline-flex;
+    margin-right: 5%;
+  }
+  .links {
+    display: none;
+  }
+  #logo {
+    margin-left: 5%;
+  }
+  main {
+    margin: 0 5%;
+  }
+  .footer {
+    margin-left: 5%;
+  }
+}

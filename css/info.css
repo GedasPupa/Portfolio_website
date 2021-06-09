@@ -1,0 +1,35 @@
+.about {
+    position: relative;
+    top: 90px;
+    height: 84%;
+    width: 100%;
+    margin: 0 10%;
+}
+
+.work h3 {
+    text-align: justify;
+    font-weight: 500;
+}
+  
+#constr {
+    position: relative;
+    background-image: url("../img/Under-Construction.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    height: 250px;
+    width: 550px;
+    opacity: 0.85;
+}
+
+#info {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    margin-top: 50px;
+}
+
+.info-image {
+    height: 100px;
+}
