@@ -1,13 +1,9 @@
 .about {
+    position: relative;
+    top: 90px;
     height: 84%;
-    width: 90%;
-}
-
-#construction {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    width: 100%;
+    margin: 0 10%;
 }
 
 .work h3 {
@@ -16,30 +12,24 @@
 }
   
 #constr {
+    position: relative;
     background-image: url("../img/Under-Construction.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    position: absolute;
     height: 250px;
+    width: 550px;
     opacity: 0.85;
 }
 
 #info {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    gap: 70px;
+    margin-top: 50px;
 }
 
-#git {
-    position: relative;
-    top: 50px;
-    width: 50%;
-}
-
-#email {
-    position: relative;
-    top: 80px;
+.info-image {
+    height: 100px;
 }

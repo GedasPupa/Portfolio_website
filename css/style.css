@@ -17,7 +17,7 @@ body {
   color: rgb(170, 170, 170);
 }
 
-main {
+.main {
   position: relative;
   top: 90px;
   display: flex;
@@ -26,22 +26,13 @@ main {
   justify-content: space-between;
   align-content: space-between;
   margin: 0 10%;
-  border: 2px solid #FFF;
-  /* height: 100vh; */
-  /* height: 850px; */
-
 }
 
 .work {
-  /* min-width: 330px;
-  max-width: 500px; */
   min-height: 300px;
-
   width: 370px;
   max-width: 800px;
   flex-grow: 1;
-
-
   display: flex;
   align-items: center;
   z-index: 5;
@@ -94,16 +85,16 @@ canvas {
   position: absolute;
   top: 100px;
   background: black;
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
-#jsfoot, #infofooter {
+#jsfoot, .footer {
   position: absolute;
-  bottom: 1px;
-  margin-left: 5%;
+  bottom: 0;
+  margin-left: 10%;
 }
 
-.footer {
+.footer-index {
   position: relative;
   bottom: -120px;
   margin-left: 10%;
